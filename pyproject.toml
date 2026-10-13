@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "takivisor"
+version = "1.0"
+description = "Quick QC reviewer for bacterial reads + assemblies (research use, not clinical)"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+takivisor = "takivisor:main"
+
+[tool.setuptools]
+py-modules = ["takivisor"]
+
+# Bundled tables and demo genome; takivisor.py looks for them next to itself, then in <prefix>/share/takivisor.
+[tool.setuptools.data-files]
+"share/takivisor" = ["species_genome_size.tsv"]
+"share/takivisor/demo" = ["demo/mgenitalium_G37.fna.gz"]
