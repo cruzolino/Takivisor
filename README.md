@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/83373567-1177-4cac-9293-bf9e960632c7" />
+
 # Takivisor
 
 Quick QC reviewer for **bacterial** isolate sequencing: give it an assembly (and, ideally, the reads and the QC
@@ -171,7 +173,3 @@ Validation results (the data sets are not included in this repository):
 - Read-based checks assume the FASTQ is a random sample of the run. A file exported from a position-sorted
   BAM/CRAM, or only its first reads, can give false read-GC warnings.
 
-## Licence
-
-Not licensed yet: all rights reserved until a licence is chosen. The bundled species table is derived from public
-NCBI data.
